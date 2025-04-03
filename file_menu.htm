@@ -1,0 +1,506 @@
+
+
+
+
+
+
+
+<HTML><HEAD><TITLE>Transcribe! : File Menu</TITLE></HEAD>
+<BODY BGCOLOR=#ffffff TEXT=#000000 LINK=#ff0000 ALINK=#ff0000 VLINK=#ff0000>
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+   <TR>
+      <TD ALIGN="CENTER" VALIGN="MIDDLE"><H2>File Menu</H2></TD>
+      <TD ALIGN="RIGHT" VALIGN="MIDDLE">
+<A HREF="contents.htm"><img align=center src="contents.png" BORDER=0 ALT="Home"></A>
+<A HREF="menus.htm"><img align=center src="up.png" BORDER=0 ALT="Up"></A>
+<A HREF="app_menu.htm"><img align=center src="back.png" BORDER=0 ALT="Previous"></A>
+<A HREF="record.htm"><img align=center src="forward.png" BORDER=0 ALT="Next"></A>
+      </TD>
+   </TR>
+</TABLE>
+
+
+<HR>
+
+<H3>Files used by Transcribe!</H3>
+First, here is a general note about sound files and transcription (xsc) files as used by Transcribe!. If you are new to Transcribe! then you should probably read this.<P>
+
+Transcribe! deals mainly with two kinds of files - sound files (named *.wav, *.aiff, *.mp3, etc) which are large and contain sampled sound, and transcription files (named *.xsc) which are small and are created and understood only by Transcribe!. When you "Save" (on Transcribe!'s File menu) you are saving a transcription file which contains information about markers, tuning and EQ settings, etc so these can be restored when you open this transcription file. The transcription file also contains the name of the sound file so that when the transcription file is opened, Transcribe! can find the appropriate sound file.<P>
+
+Transcribe! never alters your sound files in any way, and although Transcribe! is capable of creating new sound files if you ask it to (perhaps you want a new sound file with speed or pitch changes applied), it does not do this in normal operation. When you play at altered speed, for instance, Transcribe! reads the original sound file and performs the speed change on the fly while playing. It does not create an altered-speed copy on disk. Transcription (xsc) files do not contain sound, they contain text - in fact it can sometimes be useful to look at their content, see <A HREF="xsc_files.htm">here</A>. I am stressing this because many people start by imagining that xsc files contain sound, and this can lead to confusion.<P>
+
+When you start work on a new transcription there won't be a transcription (xsc) file for it yet, so naturally you open the sound file which causes Transcribe! to start a new transcription based on this sound file.<P>
+
+The "Sound File Info" window (Window menu) will show you the name and location of the transcription file (if you have created one by using the "Save" command) and the name and location of the sound file which you are working on. The title bar of the transcription window shows the name of the xsc file (or the name that will be used, by default, if it hasn't been saved yet).<P>
+
+If you save a transcription then, when you want to continue work on it, you should open the transcription file again (named *.xsc). It will appear on the "Recent Files" list on the File menu, so that's the easiest way to find it. If, instead, you open the sound file again then you would be starting a fresh transcription - markers etc that you previously saved in an xsc file will not appear, though of course they are still present in the previously saved xsc file. There is no law against having lots of different xsc files all referring to the same sound file, though it's unlikely to be useful.<P>
+
+If you load a sound file but don't save the transcription then there won't be a transcription file. It won't appear on the Recent Files list and if you want to load it again, you must load the sound file again.<P>
+
+If you open an xsc file and the sound file referred to in it cannot be found - perhaps it's been moved or deleted - then Transcribe! will complain that it can't find it. Look closely at the name and location of the sound file which Transcribe! reports as not found, and check out where this file is now. Then use the "Import Sound File" command to tell Transcribe! where it is. This problem can easily happen if the sound file is on a removable medium such as a CD. Although Transcribe! will allow you to open sound files directly from a CD it is usually a good idea to copy the sound file to your hard disk before opening a new transcription for it. Then Transcribe! will be able to find the sound file later even if you've removed the CD.<P>
+
+This problem can also happen if you copy a transcription to another machine to work on it there. Transcription files are compatible between Windows, Mac, and Linux but the filing systems on these operating systems are different. You must copy both the transcription file and the sound file but you may then have the problem of not finding the sound file, as in the previous paragraph which describes how to fix it. In fact if you copy both files to the same folder then it should not be a problem.<P>
+
+<HR><CENTER><H3>The Commands on the File Menu</H3></CENTER>
+
+<H3>Open<A NAME="open"></A></H3>
+
+Use this command to open an existing transcription (xsc) file, or to start a new one by opening a sound file.<P>
+
+If you are opening an existing transcription file then you may in fact find it easier to select it on the Recent Files list (below).<P>
+
+You can also open transcription files and sound files by drag-n-drop onto Transcribe!'s window.<P>
+
+If you are starting a new transcription by opening a sound file then you will need to make sure the file type selector in the "Open" dialog is set to display sound files, else you won't see them.<P>
+
+See above for more discussion of these matters, and see <A HREF="sound.htm">here</A> for discussion about sound file types.<P>
+
+Transcribe! will normally open a new window for the new transcription. If you would prefer the new transcription to replace the current one in the same window then hold the &lt;shift&gt; key down when you "ok" the File Open dialog or drop the file. This will only work if the current transcription has not been modified, so that it does not need to be saved.<p>
+
+
+<H3>Close<A NAME="close"></A></H3>
+This command closes the current transcription. If you have made changes to the transcription which have not been saved then Transcribe! will ask you if you want to save them.<P>
+
+
+<H3>Save<A NAME="save"></A></H3>
+This command saves the current transcription as a transcription (xsc) file. It does <I>not</I> create or save any sound file. See the discussion at the top of this page if this isn't clear to you.<P>
+
+
+<H3>Save As<A NAME="saveas"></A></H3>
+Saves a transcription (xsc) file to a specified file name. Transcribe! displays
+the "Save As" dialog box so you can name your transcription.<P>
+
+
+<H3>Recent files...<A NAME="recent"></A></H3>
+This is a list of up to 32 (you can change the number in Preferences) recently opened transcription (xsc) files. Select one of them to open it. It does not show sound files. If you start a new transcription by opening a sound file then the name of the new transcription will not appear in the Recent Files list until you "Save" the transcription (creating a transcription file on disk).<P>
+
+
+<H3>Import sound file<A NAME="import_sound"></A></H3>
+This loads a new sound file into the current transcription, preserving existing markers and text blocks and any other settings. If you're not sure what that means then read the discussion at the top of this page.<P>
+
+This command is not often needed. If you load a transcription (xsc) file but the corresponding sound file has been moved or deleted, then Transcribe! will complain that it can't find it. Use this command to reload the sound file from its new location.
+The other situation where you might want to use this command is if you have a new version of the sound file, perhaps processed or cleaned up somehow, which you want to substitute for the version you did have loaded.<P>
+
+
+<H3>Record new sound file</H3>
+This command gets a <A HREF="record.htm">page of its own</A>.<P>
+
+
+<H3>Export sound file<A NAME="export_sound"></A></H3>
+This command creates a new sound file, being a copy of all or part of the current sound file, optionally with
+processing effects applied. It's useful if, for instance, you want to create a slowed-down or pitch-changed copy of a track, to play on a different device or give to someone else.<P>
+
+This command creates WAV or AIFF or compressed format files (mp3 by default) regardless of the format of the original sound file.<P>
+
+To export compressed formats, you need to have GStreamer installed (see the <A HREF="gstreamer.htm">GStreamer help page</A>).<p>
+
+See <A HREF="file_menu.htm#prefs_export">Preferences - Export</A> for settings relating to compressed file exporting (e.g. to select the type of file and the quality).<p>
+
+The options offered are as follows.
+<UL>
+<LI>Source (Whole file / Current selection) : if you select a region of the file
+before choosing this command, then you can select here whether to copy the whole
+file or only the selected region.
+<LI>How many repetitions : sometimes people like to create play-along practice tracks containing multiple repetitions of a selected short section. This is a really good way of filling up your hard disk very quickly. For this reason, the repetition count always defaults to 1.
+<LI>Effects : these checkboxes control which of the processing effects which are operating on the active view of the current transcription, will be applied to the copy file which is created. So the idea is, you first select the processing options (tuning, speed, etc) which you want in the usual way, then select Export Sound File and make sure the checkboxes are set for the effects you want in the file. If you clear all these checkboxes then you get a straight copy with no processing.
+<LI>Format : select WAV or AIFF or Compressed.
+<LI>Sample Rate : if in doubt, select "Same as original". Except that if you want to burn the result to an audio CD then use 44100, as this is the audio CD sample rate.
+<LI>File name : select a destination name and folder for the new file.
+</UL><P>
+A large file on a slow machine will take some
+time : if you "Cancel" the operation then you will still get a valid sound file,
+complete up to the point where you cancelled.<P>
+
+
+<H3>Export split sound file<A NAME="export_split_sound"></A></H3>
+This command is very similar to the Export Sound File command just described, but it allows you to split a sound file into many separate destination files, based on the placement of markers. It creates new sound files and will not modify the source
+sound file in any way.<P>
+
+"Effects", "Format" and "Sample Rate" controls all work exactly the same as the Export Sound File command.<P>
+
+This command is not all that strongly related to transcription, however I wanted
+the feature, and it made sense to include it in Transcribe! rather than write a
+separate application, as Transcribe! already contains 90% of what is needed to
+support this feature. I sometimes copy old vinyl records, recordings of live gigs, etc. to hard disk and then
+split them into separate tracks. This means I regularly have audio files of perhaps 500MB to work through, locating the beginnings and
+ends of tracks, and saving individual tracks as sound files. I have not found
+any other tool which does this job quickly and easily. This command makes it easy.<P>
+
+<UL>
+<LI>Start a new transcription by loading the large sound file you want to split.
+<LI>Place a "section" marker at the beginning of each track you want and a
+"measure" marker at the end of each track. The cue and review buttons are
+particularly useful here.
+<LI>Save your work, if you like, in the usual transcription (xsc) file.
+<LI>Select the "Export split sound file" command.
+<LI>Use the "Browse" button to select a location for the resulting files.
+<LI>Check the listbox contents : it lists the tracks and their durations.
+<LI>If all is well, press OK.
+</UL><P>
+
+Obviously, we are not using markers here for their normally intended purpose,
+but they work fine nevertheless. Beat markers are entirely ignored. The opening
+section of the source file, up to the first section marker, will be deleted. If
+you want to keep the beginning, place your first section marker at the very start.
+If you place a measure marker at the end of a track then the source from here to
+the next track start (section marker) will be lost. If you want to keep the entire
+source then don't use a measure marker at all. A section marker not only starts a
+new track but also ends the last one, if it has not already been ended by a measure marker.<P>
+
+The "File prefix" display shows the location on disk for the new files, including
+the first part of the file name. Track file names
+will be constructed by appending suffixes to this. The suffix will normally be the
+number of the track as listed in the list box, but if you edit the section marker
+which begins the track, and give it a non-default label (the track name) then this
+will be used as a suffix instead.
+If you use characters not allowed in filenames, they will be replaced by underscores.<P>
+
+
+<H3>Export video<A NAME="export_video"></A></H3>
+This command creates a new video file, being a copy of all or part of the current video file, optionally with
+processing effects applied. It's very similar to the Export Sound File command described above, so see there for more details.<p>
+
+The video format created is always mp4 with aac-encoded audio and H264-encoded video with frequent key frames. We have chosen this format because it is highly portable. If you have a video which plays jerkily in Transcribe! then try using this command to create a copy, then load the copy.<p>
+
+If the original video is very high quality then you might want to reduce the quality to get a smaller exported file. You can do this: see <A HREF="file_menu.htm#prefs_export">Preferences - Export</A> for this setting.<p>
+
+You need to have installed GStreamer to work with videos - see the <A HREF="gstreamer.htm">GStreamer help page</A>.<p>
+
+<H3>Export split video<A NAME="export_split_video"></A></H3>
+This command is very similar to the Export Split Sound File command just described, but it allows you to split a video into many separate destination files, based on the placement of markers. It creates new video files and will not modify the source video in any way.<P>
+
+
+<H3>Export Markers and Text Blocks<A NAME="export_textblock"></A></H3>
+This is for saving markers and/or text blocks to a text file on disk, so that you can import into other software. UTF8 encoding is always used. Here are the options offered in the dialog.<P>
+
+<B>Source</B><P>
+If you have a current selection then you can choose whether to export text blocks from the whole file, or only those currently selected.<P>
+
+<B>Include markers?</B><P>
+You can select which marker types (if any) to include. Markers generated by auto subdivision are considered to be beat markers in this context.<P>
+
+<B>Which colours to export</B><P>
+You get a checkbox for each colour in use, so you can select which to export. If you don't select any colour then you can export just the markers.<P>
+
+<B>Word wrapping</B><P>
+If you turn this on then lines will be broken if necessary so as not to exceed the specified number of characters.<P>
+
+<B>File name</B><P>
+Choose a name and location for the exported text file.<P>
+
+<B>Include UTF8 BOM (byte-order mark)</B><P>
+Since the exported text file is intended for loading into other software, this option is provided for compatibility. The UTF8 BOM is a three-byte sequence (hex EF, BB, BF) which can optionally appear at the very beginning of a file, to indicate that it is UTF8. If the software you are loading the file into is either failing to load unusual characters correctly or is loading with some extra rubbish at the beginning, try changing this option. Of course, you should also try explicitly telling the software to load as UTF8.<P>
+
+Defaults:<BR>
+<UL>
+<LI>Windows: Yes, because Notepad does, when saving UTF8.
+<LI>Mac: Yes, because TextEdit by default does not load it correctly without.
+<LI>Linux: No, it's not generally used.
+</UL><P>
+
+
+
+
+<H3>Preferences<A NAME="prefs"></A></H3>
+
+The Preferences dialog has options for configuring Transcribe!. It has several pages dealing with different aspects of Transcribe!'s behaviour.<P>
+
+On Windows, preferences information is stored in your computer's Registry. "HKEY_CURRENT_USER/Software/Seventh String Software/Transcribe!7"<p>
+
+
+If you want to edit your Preferences manually (which is not normally necessary but some people like doing this sort of thing) then you should do it while Transcribe! is not running. Otherwise when you exit Transcribe! it will save its preferences, which will erase any manual edits you made.<p>
+
+<B>General<A NAME="prefs_general"></A></B><P>
+<UL>
+<LI>Reload open windows at launch.<BR>
+If this is checked then on launch Transcribe! will reopen the windows which were open when it was last shut down. If this option is on then you can nevertheless prevent this by holding down the shift key while Transcribe! launches.<BR>
+
+<LI>Always display waveform in mono.<A NAME="display_mono"></A><BR>
+By default, the waveform display will show both channels separately if the sound file is stereo. Here you can choose to combine the two channels into a single profile. This can give a clearer picture if you are only allowing the waveform a very narrow space on the screen. This only affects the display, it does not affect the playback.<BR>
+
+<LI>Reduced CPU.<BR>
+This will reduce the amount of processor power used during playback. It is purely a matter of graphics and does not affect playback quality. It simply slows down the rate at which the display is refreshed, which will result in the waveform and play position scrolling movement on screen becoming slightly less smooth.<BR>
+
+<LI>Large Cursors.<BR>
+On some hi-res screens, depending on your Windows settings, Transcribe!'s cursors may be very small.
+In that case you can check this box, causing them to be bigger.
+You will need to re-launch Transcribe! to see the effect, after changing this preference.
+<BR>
+
+<LI>Live Spectrum following playback.<A NAME="prefs_livespectrum"></A><BR>
+This means that the spectrum, and also note and chord guesses, are updated regularly to follow the music while it is playing. This uses extra processing power so don't use it if your computer can't keep up.<BR>
+
+<LI>Compute Piano Roll while playing.<A NAME="prefs_prdp"></A><BR>
+Sometimes, on some machines, computing the piano roll data in the background while playing can cause playback interruptions (drop outs), or late marker placement (press 'M' while playing and the marker ends up rather later than the desired point). 
+If this is happening to you then you can turn off this option, meaning that Piano Roll data is only computed when playback is stopped. Also if you turn off the Piano Roll view altogether (on the PianoRoll menu) then Piano Roll data will not be computed at all.<BR>
+
+<LI>Show Tool Tips.<BR>
+Tooltips are the little yellow pop-up boxes with descriptive text, which appear when you hold the mouse pointer over toolbar buttons etc. They are useful for beginners but you may want to switch them off if they annoy you.<BR>
+
+<LI>Closing last window closes application immediately.<BR>
+This does what it says. See <A HREF="window_menu.htm">here</A> for more discussion of this issue.<BR>
+
+<LI>Default new transcription files to the same folder as the sound file.<BR>
+By default when you create a new transcription file (that is, if you load a sound file and then Save for the first time), the initial folder for saving will be the same folder you last saved a new transcription file to. Of course you can then select any folder you want. However if you check this box then the initial folder for saving will instead be the same folder that the sound file is located in. This will not be hugely useful if the sound file is in a read-only location such as an audio CD.<BR>
+
+<LI>Recent files list: How many entries?<BR>
+How many of your most recently opened transcription files would you like to see in the Recent Files list (on the File menu)? (default 16, maximum 32)<BR>
+
+<LI>Recent files list: Show folders?<BR>
+By default, transcription files appearing in the Recent Files list (on the File menu) are displayed with folder information. Here you can choose whether they should instead show names only, without folder information.<BR>
+
+<LI>Middle C is.<BR>
+You can choose whether Transcribe! considers middle C to be C3, C4 or C5. "Who uses C5?" do I hear you ask? Handbell ringers, apparently.<BR>
+
+<LI>Label piano keys if wider than.<A NAME="label_piano"></A><BR>
+By default Transcribe! labels only the "C"s on the <A HREF="gs_window.htm#piano">piano keyboard</A>, giving their MIDI octave numbers for reference. If you want then you can also have note names appear on all the white notes. If you specify 0 here (the default) then Transcribe! will only label the "C"s. Otherwise, Transcribe! will label all the white notes whenever their size on the screen is wider than the number of pixels you specify. About 20 or 30 is usually a suitable sort of value.<BR>
+
+<LI>Mouse Wheel Sensitivity.<BR>
+Mouse Wheels vary in sensitivity so here you can make adjustment. 10 is the default here, and 0 will turn it off altogether.<BR>
+
+<LI>Vertical scale of spectrum display.<A NAME="scale_spectrum"></A><BR>
+The default value here is 0, meaning that the <A HREF="gs_window.htm#spectrum">spectrum display</A>
+will be scaled automatically so that the largest peak fills the vertical space available (unless its amplitude is very small). But if you set any other value then you will get fixed vertical scaling of the spectrum. The larger the value, the higher the peaks will be - a value of about 10 may be suitable.
+See <A HREF="spectrum.htm">Interpreting the Spectrum</A> for a more detailed discussion of this.<BR>
+
+<LI>Screen dots per inch.<A NAME="screen_dpi"></A><BR>
+Here you can specify the resolution of your display screen. When adjusted correctly, the line displayed should be one inch long (2.54 cm). This is not a hugely important figure but it affects things like the thickness of lines used for drawing some things, and the default size of marker triangles. It does not affect text - Transcribe! uses the same text sizes used by the system. The reason for providing this adjustment is because there isn't really any other reliable way of determining this in all situations - for instance if you have a multi-display system where the displays have different characteristics.<BR>
+
+<LI>Size of "Go To Marker" and "Go To Text Block" menus.<A NAME="gotopopup"></A><BR>
+When you right-click the <A HREF="gs_window.htm#navbar">navigation bar</A> you get a popup menu of markers which you can jump to. And when you right-click the <A HREF="text_menu.htm">text zone</A> you get a popup menu of text blocks which you can jump to. This preference determines how large the menu will be, by specifying the maximum number of items either side of the clicked point which will appear in the menu.<BR>
+
+
+
+</UL><P>
+
+
+<B>New Windows<A NAME="prefs_newwindows"></A></B><P>
+
+Here you can specify your preferences for the initial state of new transcriptions,
+when they are first created by loading a sound file.<P>
+
+Once a transcription (xsc) file has been saved, many things about the transcription are saved there and will be reloaded when you load that transcription file again. But when you load a sound file to create a new transcription, there is no transcription file yet so default values will be used.<P>
+
+"Set position from previous session"<BR>
+You can choose how the position and size of Transcribe!'s first transcription window opened is determined. If you check this box then it will be set from the position of the last window open when you last closed Transcribe!. Otherwise it will be set from a stored default position which you can set by first moving your transcription window to the desired position, then check "Set defaults from current window" and press "Ok".<P>
+
+If you check the "Set defaults from current window" box then when you press "Ok" your preferences will be set from the state of the current window. There are three choices regarding the saving of Audio Effects settings :<P>
+<UL>
+<LI>None by default.<BR>
+This means that newly created transcriptions will not have any effects applied.<BR>
+<LI>Keep existing defaults.<BR>
+As it says. This option is only displayed if you have saved default Fx settings in the past.<BR>
+<LI>Set defaults from current transcription.<BR>
+As it says. You could, for instance, set half speed and then use this option. If you do, then newly created transcriptions will start with half speed already set.
+</UL><P>
+
+Here is a list of things saved when you "Set defaults from current window" :<P>
+<UL>
+<LI>The position and size of the transcription window.
+<LI>"<A HREF="view_menu.htm#ontop">Always On Top</A>"
+<LI>All Audio Effects (optionally, as described above).
+<LI>Whether to show the text zone, and the font to be used.
+<LI>Whether to show the piano roll.
+<LI>Whether to show the piano at the left of the piano roll, and its position (top and bottom notes).
+<LI>The sensitivity of note display in the piano roll.
+<LI>Whether to show video, and the default video size.
+<LI>Whether to show the navigation bar.
+<LI>Whether to show the spectrum.
+<LI>Whether to show note guesses.
+<LI>Whether to show chord guesses.
+<LI>Whether to show dB calibration lines on the waveform.
+<LI>Whether to show the time line above the waveform and in the navigation bar.
+<LI>Whether to show the loop line above the waveform and in the navigation bar.
+<LI>Whether to "Fit whole file" (horizontal scaling).
+<LI>Loop mode on/off.
+<LI>Scroll mode on/off.
+<LI>Piano position (top and bottom notes).
+<LI>Splitter position.
+<LI>Horizontal scaling of view.
+</UL><P>
+
+
+<B>Playback<A NAME="prefs_playback"></A></B><P>
+
+<UL>
+<LI>Restrict Cue/Review to the zone now playing.<BR>
+Suppose that you are playing a loop which you have selected. Ordinarily if you use Cue/Review then this will take you outside the loop and across the full length of the track. However if you check this box then Cue/Review will not take you outside the selected area.<BR>
+
+<LI>Use compressor to prevent digital overload.<BR>
+Transcribe! has a compressor/limiter so if you turn the volume or EQ too high you will get compression rather than distortion, and a red bar will appear below the volume slider in the lower toolbar to show you the amount of compression. Here you can turn it off if you don't like it.<BR>
+
+<LI>Paused playback point follows selection.<BR>
+Some people like to stay in Pause mode when not playing, and never press the Stop button. In that case it is useful to select this option. It means that whenever you change the selection or current point (for instance by clicking on the waveform), if you are paused then the paused point moves to the newly selected point.<BR>
+
+<LI>Fat play position indicator (for better visibility).<BR>
+On some screens it can be difficult to see the play position indicator. This makes it fatter.<BR>
+
+<LI>Keep playing when in background.<BR>
+The question is, when you click on some other application to bring it to the front, do you want Transcribe! to keep playing or stop? Be aware that Transcribe!'s Help Viewer and Video Viewer are effectively different applications, so if you uncheck this option then playback will stop when you bring either of those windows to the front.<BR>
+
+<LI>Auto play on load.<BR>
+When you load a file it will immediately start playing as if you had pressed the Play button on the toolbar.<BR>
+
+<LI>Use mousewheel for scrubbing.<BR>
+With this option selected you can use the mousewheel over the waveform profile or over the video window for scrubbing backwards and forwards. See <A HREF="mouse.htm#scrub">Mouse Commands</A> for full documentation about this feature.<br>
+If this option is not selected then using the mousewheel over the waveform profile will scroll the waveform instead.<BR>
+
+<LI>Playback loop delay.<BR>
+When looping playback is on, you
+can choose to have a pause after each time the segment is played before it starts to
+play again. This gives you a bit of time to think and to write down what you hear.<BR>
+Min: 0  Max: 100  Default: 0  (tenth-seconds).<BR>
+Note for experienced users: for rapid adjustment of delay, there is a command called "PlayLoopDelaySetCurrent" which sets the delay equal to the length of the current selection. This is provided because some people like the delay to be the same length as the selected loop. Or if you want a delay of one measure then just select a measure (any measure) and this command will set the delay. There is no menu entry or default keyboard shortcut for this command so you will need to configure a
+<A HREF="kb.htm">keyboard shortcut</A> for it yourself if you want to use it.<br>
+
+<LI>Playback start delay.<BR>
+There is a command PlaySelectionDelayStart (default shortcut shift-spacebar) which will start playback after a delay, to give you time to prepare yourself before playback starts. This preference is where you set the amount of delay, and it affects only this command.<BR>
+Min: 0  Max: 100  Default: 0  (tenth-seconds).<BR>
+If you have updated from a previous version of Transcribe! then the shift-spacebar shortcut will not be automatically defined, you will need to configure a
+<A HREF="kb.htm">keyboard shortcut</A> to it yourself if you want to use it. Or press the Default button in the keyboard shortcuts dialog.<br>
+
+<LI>Rewind on pause.<BR>
+When you pause playback, you can choose to have the paused point stepped back a bit from where you were
+up to when you pressed pause. The effect is that when you unpause, you will hear again the last thing you were listening to.<br>
+Min: 0  Max: 50  Default: 0  (tenth-seconds).<BR>
+It won't let you go back before the current playback start-point. If you want to work on an earlier part of the file, click on the waveform to set the current point further back.<br>
+Note for experienced users: if you like configuring <A HREF="kb.htm">keyboard shortcuts</A> then you can have rewind versions and no-rewind versions both available. If you set a Rewind-on-pause then the commands affected are PlayPauseOn, PlayPauseToggle, PlaySpacebar. So we provide alternative versions PlayPauseOnNoRewind, PlayPauseToggleNoRewind, PlaySpacebarNoRewind which bypass any rewind you have set up. So you might for instance assign the keystroke alt-comma as PlayPauseToggleNoRewind so plain comma will pause with rewind and alt-comma will pause without rewind.<br>
+
+<LI>Playback buffer size.<BR>
+When Transcribe! has prepared some audio to be played it puts it in the playback
+buffer and hands it to the sound driver to be queued for playing. If the buffer
+is too short then you may get "drop-outs" - short
+slivers of silence. If the buffer is long then Transcribe!'s response to such
+things as volume and pitch changes gets slow, as these changes can only take
+effect after the present buffer contents have been played. Depending on your OS and sound card and drivers, you may find that there are system configuration options regarding soundcard setup. If you change this while playing then you will need to stop playback and start again before it takes effect.<BR>
+Min: 2  Max: 10  Default: 4 (tenths of a second).<BR>
+
+<LI>Audio Output Device.<BR>
+Normally the "Use default device" box is checked. However if you have more than one sound output device then you can uncheck this box, and select the device to be used for playback output.<BR>
+
+
+<LI>Output Sample Rate.<BR>
+Regardless what the sample rate of the source audio file might be, Transcribe! always plays at 44100Hz (CD sample rate) or 22050Hz (half that rate). These are very common sample rates which nearly all modern sound cards can use, so by converting to these rates, Transcribe! can play any sound file regardless of its rate.<BR>
+Here you select which of these rates to use. Normally you should use 44100 as the quality is higher. See <A HREF="slow.htm">here</A> for why you might want to use the slower rate.<BR>
+
+<LI>Cue and Review speed.<BR>
+You can separately choose how fast Cue (fast forwards) and Review (rewind) should be, as a multiple of normal playback speed. And what's more you can have them accelerate over a number of seconds if you want. You can specify the initial speed, the final speed, and the number of seconds to take in reaching the final speed. If you don't want to accelerate, then just set the initial and final speeds both the same.<BR>
+Default is to accelerate from 4x to 20x over 8 seconds.<BR>
+
+<LI>Cue and Review volume.<BR>
+The little "Vol" slider to the right of the Cue/Review speed controls is for controlling the volume of Cue/Review playback, because it is often pleasant to have Cue/Review playback quieter than normal playback. Default is 60%, meaning that Cue/Review volume is less than normal playback volume.<BR>
+
+</UL><P>
+
+
+<B>Export<A NAME="prefs_export"></A></B><P>
+
+<UL>
+<LI>Default exported sound files to the same folder as the sound file.<BR>
+By default when you export a sound file, the initial folder for saving will be the same folder you last exported a sound file to. Of course you can then select any folder you want. However if you check this box then the initial folder for exporting will instead be the same folder that the sound file is located in. This will not be useful if the sound file is in a read-only location such as an audio CD.<P>
+
+
+<LI>Sound Compression Settings
+</UL><P>
+
+The "Export Sound File" and "Record New Sound File" commands cause Transcribe! to produce a sound file on disk, and they allow you to choose a compressed audio format if you want to produce a smaller file. This preferences page allows you to configure the type of compression used.<P>
+
+To export compressed audio formats, you need to have GStreamer installed (see the <A HREF="gstreamer.htm">GStreamer help page</A>).<p>
+
+We use GStreamer to produce compressed sound files, and we offer presets on this page for mp3, m4a, and Ogg Vorbis, each in high quality (approx 256 kbits/sec for stereo) or medium quality (approx 128 kbits/sec for stereo). So the simplest thing is to select one of those.<p>
+
+However you can also use custom settings of your own. If you want, for example, to produce an m4a at a different bitrate then you should (1) click on "High quality m4a" (2) click the "Custom settings..." button. This brings up a dialog showing the actual GStreamer elements used for this compression. You can see the numbers 256000 and 160000 being used for stereo and mono respectively - these are the bitrates, so you can change them. Not all bitrates are allowed by all encoders. Then "OK", and you will see that now the "Custom" radio button is selected, for your custom settings. Click "OK" again to save these settings and exit the dialog.<p>
+
+For more details about GStreamer elements see GStreamer documentation, but the basic idea is that the following command in a console will discover what plugins (elements) are installed on your system, though not all will be for audio:<br>
+&nbsp;&nbsp;&nbsp;gst-inspect-1.0<br>
+And having discovered that you have an encoder (e.g. "vorbisenc"), you can<br>
+&nbsp;&nbsp;&nbsp;gst-inspect-1.0 vorbisenc<br>
+to find what properties it has (e.g. bitrate etc).<p>
+
+It's best to search online for how to use any given encoder. E.g. you can find instructions online for how to re-encode a file as ogg on the command line in a console:<br>
+&nbsp;&nbsp;&nbsp;gst-launch-1.0 filesrc location=&lt;filename&gt; ! decodebin ! vorbisenc quality=0.5 ! oggmux ! filesink location=&lt;filename.ogg&gt;<br>
+So the relevant elements for Transcribe! are "vorbisenc quality=0.5 ! oggmux" because vorbisenc performs the encoding and then oggmux packs the result into an ogg file.<p>
+
+<UL>
+<LI>Video Compression Settings
+</UL><P>
+
+When you are exporting video, if the original video is very high quality then you might want to reduce the quality to get a smaller exported file. With this setting you can limit the bit rate (specified here in MBytes per minute) of the exported video. This limit applies to the video and does not include the audio, so the exported video will be somewhat bigger that this figure suggests, due to the addition of the audio track. This limit only has any effect if the bit rate of the original video is higher that the number you specify here.<br>
+Strictly speaking, this limit specifies MBytes per minute of the original video rather than of the exported video. If you export one minute of video at normal speed and 10 MBytes per minute then the video part of the export (as opposed to the audio part) will be 10 MBytes in size. If you repeat the export at half speed then the exported video will be two minutes long but will still be 10 MBytes in size. This makes sense because even though the exported video is twice as long as before, it still contains exactly the same number of video frames.<br>
+A setting of 0 means do not apply any limit. A setting of 10 gives reasonable quality, and 20 gives good quality. If you are not too bothered about quality then you can go as low as 2 or 3 and still get something watchable.<br>
+Min: 0  Max: 20  Default: 20.<p>
+
+<B>Markers<A NAME="prefs_markers"></A></B><P>
+
+Auto labelling : These options, and lots more about markers, are discussed <A HREF="markers_menu.htm">here</A>.<p>
+
+Latency when tapping to place markers : On some machines, depending on your hardware,
+there is latency in sound playback which is out of Transcribe's control, and it means that when you tap the keyboard
+shortcuts to insert markers while the music is playing, they end up late.
+Increasing the latency here will cause the markers to appear earlier
+(this only affects newly placed markers, not those already existing).
+This is particularly important if you are using metronome clicks. If you have a transcription
+where the markers are consistently late then it's easy to move them all slightly to one side, see
+<A HREF="markers_menu.htm">here</A> for how to move multiple markers.<p>
+
+
+<B>Fret Display<A NAME="prefs_fretdisplay"></A></B><P>
+This is relevant only if you play a string instrument. When
+you right-click the <A HREF="gs_window.htm#piano">piano keyboard</A>,
+a little window pops up telling you
+which strings at which fret would play the note. This initially defaults to standard six
+string guitar, but this is where you can specify other string
+instruments, the number of strings and tuning. This information will then be used
+when you subsequently right-click the keyboard.<P>
+
+We speak here (and in the string info pop-up) of "frets". Of course, many string
+instruments don't have frets but I think our meaning should be clear anyway.<P>
+
+The first control is "Show fret positions when click on piano". If you don't want the fret information to be shown when you right-click the piano keyboard then uncheck this box.<p>
+
+Then there is "Highest fret for alternative fingerings". Transcribe! does not set this for you when you select
+an instrument, it's up to you to change it if you want. It doesn't actually have to
+be the highest fret on the instrument, you should set it to the highest fret which
+you want Transcribe! to consider using for alternative fingerings. The point is that
+most notes can be played on several different strings, at higher fret positions on
+lower-pitched strings. Transcribe! will report these alternate fingerings as long
+as they do not exceed the "highest fret" that you have specified. Transcribe! makes
+an exception for your highest-pitched string and will always report the fret number
+for this string no matter how high the note is.<P>
+
+The "New Instrument" button allows you to name and specify another instrument to add to the default list which Transcribe! already knows about.<P>
+
+The "Instrument" box specifies characteristics of your selected instrument. First there is a drop-down box where you can select one from the list of instruments.<P>
+
+You can specify how many strings the instrument has, and what note each string is tuned to. When you select which note, a blob is shown on the <A HREF="gs_window.htm#piano">piano keyboard</A>. You may need to move the Preferences dialog to see it.<P>
+
+One or two things to note about this page :<P>
+
+<UL>
+<LI>Remember that guitar and bass are transposing
+instruments : they sound an octave lower than written. The top string of the guitar
+in standard tuning is correctly reported as E just above middle C.<BR>
+<LI>If you sometimes use a capo on a guitar, then this page is probably <I>not</I> the place to deal with it. Instead, treat guitar-with-capo as a <A HREF="fx_transposition.htm">transposing instrument</A>. In fact you might want to treat guitar as a transposing instrument (by one octave) anyway.<BR>
+<LI>If you press the "default" button on this page then the instruments which Transcribe! knows about will all be restored to their standard tunings (in case you changed them) but new instruments you added will not be deleted.<BR>
+</UL><P>
+
+<B>Toolbar<A NAME="prefs_toolbar"></A></B><P>
+On this preferences page is a list of all the available toolbar buttons. You can choose which ones actually appear in the toolbar by checking the checkboxes. See also the <A HREF="toolbar.htm">Toolbar page</A><p>
+
+
+
+<H3>Keyboard shortcuts<A NAME="kbcmnds"></A></H3>
+This command gets a <A HREF="kb.htm">page of its own</A>.<P>
+
+<H3>MIDI shortcuts<A NAME="midicmnds"></A></H3>
+This command gets a <A HREF="midi.htm">page of its own</A>.<P>
+
+<H3>Foot Pedals<A NAME="footpedals"></A></H3>
+This command gets a <A HREF="footpedal.htm">page of its own</A>.<P>
+
+
+<H3>Exit</H3>
+Use this command to end your Transcribe! session. Transcribe! prompts you to save transcriptions with unsaved changes.<P>
+
+</HTML>
